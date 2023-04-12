@@ -104,28 +104,28 @@
 // }
 // export default App
 
-// import React from 'react'
-// import {photos} from './post'
-// const App = () => {
-//   return (
-//     <div id='container'>
-//       <div>
-//         <h1 id='head'>Tourist Places</h1>
-//         <div id='body'>
-//           {
-//             photos.map((e, i) => (
-//               <div key={i} id='card' >
-//                 <h3>{e.title} </h3>
-//                 <img src={e.url} alt="descriptive text"/>
-//               </div>
-//             ))
-//           }
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-// export default App
+import React from 'react'
+import {photos} from './post'
+const App = () => {
+  return (
+    <div id='container'>
+      <div>
+        <h1 id='head'>Tourist Places</h1>
+        <div id='body'>
+          {
+            photos.map((e, i) => (
+              <div key={i} id='card' >
+                <h3>{e.title} </h3>
+                <img src={e.url} alt="descriptive text"/>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  )
+}
+export default App
 
 // import React from 'react'
 
@@ -187,41 +187,41 @@
 // export default App
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const App = () => {
-  const [button, inCreamnt] = useState(0)
+// const App = () => {
+//   const [button, inCreamnt] = useState(0)
 
-  return (
-    <div>
-      <div>
-        <h1>Count: {button}</h1>
-        <div>
-          {
-            button < 100
-              ? <button onClick={() => inCreamnt(button+10)}>increament</button>
-              : <button>increament</button>
-          }
-          {
-            button > 0
-              ? <button onClick={() => inCreamnt(button-10)}>decrement</button>
-              : <button>decrement</button>
-          }
-        </div>
-        {/* <button onClick={() => setTabs("blue")}>Green</button>
-        <button onClick={() => setTabs("green")}>Blue</button> */}
-      </div>
-      <div>
-        {
-          button<50
-          ? <div style={{height:"90vh", backgroundColor:"red"}}></div>
-          : button>50 &&  button<75
-          ? <div style={{height:"90vh", backgroundColor:"blue"}}></div>
-          :  <div style={{height:"90vh", backgroundColor:"green"}}></div>
-        }
-      </div>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <div>
+//         <h1>Count: {button}</h1>
+//         <div>
+//           {
+//             button < 100
+//               ? <button onClick={() => inCreamnt(button+10)}>increament</button>
+//               : <button>increament</button>
+//           }
+//           {
+//             button > 0
+//               ? <button onClick={() => inCreamnt(button-10)}>decrement</button>
+//               : <button>decrement</button>
+//           }
+//         </div>
+//         <button onClick={() => setTabs("blue")}>Green</button>
+//         <button onClick={() => setTabs("green")}>Blue</button>
+//       </div>
+//       <div>
+//         {
+//           button<50
+//           ? <div style={{height:"90vh", backgroundColor:"red"}}></div>
+//           : button>50 &&  button<75
+//           ? <div style={{height:"90vh", backgroundColor:"blue"}}></div>
+//           :  <div style={{height:"90vh", backgroundColor:"green"}}></div>
+//         }
+//       </div>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
